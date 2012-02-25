@@ -41,7 +41,7 @@ bash_prompt() {
 	export PS1="\n${W}[\t${W}] ${Y}[${B}\u${B}@${B}\h ${EMB}\w${Y}]${w}${C}\$(__git_ps1 ' (%s)')${EMW} > ${NONE}"
 } 
 #	
-PROMPT_COMMAND=bash_prompt_command
+#PROMPT_COMMAND=bash_prompt_command
 bash_prompt
 unset bash_prompt
 
