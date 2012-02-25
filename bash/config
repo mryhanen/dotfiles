@@ -50,4 +50,5 @@ export EDITOR="sub"
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS='Bxgxfxfxcxdxdxhbadbxbx'
+export LS_COLORS='Bxgxfxfxcxdxdxhbadbxbx'
 
