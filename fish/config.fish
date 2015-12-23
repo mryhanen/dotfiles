@@ -26,7 +26,15 @@ set -g CDPATH . ~
 #end
 
 # http://fishshell.com/docs/2.1/#variables-special
-set fish_user_paths /usr/local/heroku/bin /usr/local/bin ~/bin ~/.dotfiles/fish/../bin
+set fish_user_paths  /usr/local/bin
+
+if test -d ~/bin
+  set fish_user_paths ~/bin
+end
+
+if test -d /usr/local/heroku/bin
+  set fish_user_paths /usr/local/heroku/bin
+end
 
 if test -d /usr/local/sbin
   set fish_user_paths /usr/local/sbin $fish_user_paths
@@ -49,8 +57,10 @@ set -g __fish_git_prompt_showupstream "auto"
 set -g __fish_git_prompt_showstashstate "1"
 set -g __fish_git_prompt_showdirtystate "1"
 
-. $HOME/.config/fish/solarized.fish
-. $HOME/.config/fish/ls.fish
+# . $HOME/.config/fish/solarized.fish
 
 # mkdir -p ~/.rubies
 # . $HOME/.config/fish/rubies.fish
+
+. $HOME/.config/fish/functions/ls.fish
+. $HOME/.config/fish/functions/z.fish

@@ -65,4 +65,5 @@ function fish_prompt
   # Terminate with a nice prompt char
   echo -n -s ' ⟩ ' $normal
 
+  z --add "$PWD"
 end
