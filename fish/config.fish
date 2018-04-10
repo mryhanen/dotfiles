@@ -64,3 +64,4 @@ set -g __fish_git_prompt_showdirtystate "1"
 
 . $HOME/.config/fish/functions/ls.fish
 . $HOME/.config/fish/functions/z.fish
+set -x PATH $HOME/.fastlane/bin $HOME/Library/Python/2.7/bin $PATH
